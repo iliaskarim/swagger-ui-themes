@@ -808,7 +808,8 @@
   background: hsla(0, 0%, 100%, .8);
   font-family: Source Code Pro, monospace;
   font-weight: 600;
-  color: #3b4151
+  background: rgb(51, 51, 51);
+  color: white
 }
 
 .swagger-ui textarea:focus {
