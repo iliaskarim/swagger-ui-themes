@@ -749,14 +749,19 @@
   padding: 8px 10px;
   border: 1px solid #d9d9d9;
   border-radius: 4px;
-  background: #fff
+  background: #333;
+  color: #fff
+}
+
+.swagger-ui input[type=email]::placeholder, .swagger-ui input[type=password]::placeholder, .swagger-ui input[type=search]::placeholder, .swagger-ui input[type=text]::placeholder {
+  color: #aaa;
 }
 
 .swagger-ui input[type=email].invalid, .swagger-ui input[type=password].invalid, .swagger-ui input[type=search].invalid, .swagger-ui input[type=text].invalid {
   -webkit-animation: shake .4s 1;
   animation: shake .4s 1;
-  border-color: #f93e3e;
-  background: #feebeb
+  border-color: #ff5f5f;
+  background: #4a1e1e;
 }
 
 @-webkit-keyframes shake {
