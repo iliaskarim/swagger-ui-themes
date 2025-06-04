@@ -610,13 +610,13 @@
   -webkit-animation: pulse 2s infinite;
   animation: pulse 2s infinite;
   color: #fff;
-  border-color: #000000
+  border-color: #222
 }
 
 @-webkit-keyframes pulse {
   0% {
     color: #fff;
-    background: #000000;
+    background: #222;
     box-shadow: 0 0 0 0 rgba(73, 144, 226, .8)
   }
   70% {
@@ -624,7 +624,7 @@
   }
   to {
     color: #fff;
-    background: #000000;
+    background: #222;
     box-shadow: 0 0 0 0 rgba(73, 144, 226, 0)
   }
 }
@@ -632,7 +632,7 @@
 @keyframes pulse {
   0% {
     color: #fff;
-    background: #000000;
+    background: #222;
     box-shadow: 0 0 0 0 rgba(73, 144, 226, .8)
   }
   70% {
@@ -640,7 +640,7 @@
   }
   to {
     color: #fff;
-    background: #000000;
+    background: #222;
     box-shadow: 0 0 0 0 rgba(73, 144, 226, 0)
   }
 }
@@ -1343,7 +1343,7 @@
   -webkit-transition: all .4s;
   transition: all .4s;
   font-family: Open Sans, sans-serif;
-  color: #000000
+  color: #4990e2
 }
 
 .swagger-ui .info a:hover {
