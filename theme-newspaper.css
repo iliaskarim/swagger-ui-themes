@@ -107,8 +107,8 @@
 
 .swagger-ui .opblock .opblock-section-header {
   padding: 8px 20px;
-  background: hsla(0, 0%, 100%, .8);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, .1)
+  background: rgba(0,0,0,0);
+  box-shadow: none
 }
 
 .swagger-ui .opblock .opblock-section-header, .swagger-ui .opblock .opblock-section-header label {
@@ -133,7 +133,7 @@
 }
 
 .swagger-ui .opblock .opblock-section-header h4 {
-  font-size: 14px;
+  font-size: 16px;
   margin: 0;
   -webkit-box-flex: 1;
   -ms-flex: 1;
@@ -323,7 +323,7 @@
 }
 
 .swagger-ui .tab li {
-  font-size: 12px;
+  font-size: 14px;
   min-width: 100px;
   min-width: 90px;
   padding: 0;
@@ -356,7 +356,7 @@
 }
 
 .swagger-ui .opblock-description-wrapper, .swagger-ui .opblock-description-wrapper h4, .swagger-ui .opblock-title_normal, .swagger-ui .opblock-title_normal h4 {
-  font-size: 12px;
+  font-size: 14px;
   margin: 0 0 5px;
   font-family: Open Sans, sans-serif;
   color: #3b4151
@@ -567,7 +567,7 @@
   padding: 5px 23px;
   -webkit-transition: all .3s;
   transition: all .3s;
-  border: 2px solid #888;
+  border: 2px solid #3b4151;
   border-radius: 4px;
   background: transparent;
   box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
@@ -1194,11 +1194,11 @@
 }
 
 .swagger-ui table thead tr td, .swagger-ui table thead tr th {
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 700;
   padding: 12px 0;
   text-align: left;
-  border-bottom: 1px solid rgba(59, 65, 81, .2);
+  border-bottom: none;
   font-family: Open Sans, sans-serif;
   color: #3b4151
 }
@@ -1668,3 +1668,7 @@
  .swagger-ui .btn.authorize svg {
    fill: #222222;
  }
+
+.swagger-ui .opblock.opblock-put .tab-header .tab-item.active h4 span:after {
+  background: #3b4151;
+}
