@@ -317,7 +317,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 20px 0 10px;
+  margin: 0 0 10px;
   padding: 0;
   list-style: none
 }
@@ -352,12 +352,12 @@
 }
 
 .swagger-ui .opblock-description-wrapper, .swagger-ui .opblock-title_normal {
-  padding: 15px 20px
+  padding: 5px 20px
 }
 
 .swagger-ui .opblock-description-wrapper, .swagger-ui .opblock-description-wrapper h4, .swagger-ui .opblock-title_normal, .swagger-ui .opblock-title_normal h4 {
   font-size: 14px;
-  margin: 0 0 5px;
+  margin: 10px 0 20px;
   font-family: Open Sans, sans-serif;
   color: #3b4151
 }
@@ -402,7 +402,7 @@
 }
 
 .swagger-ui .responses-inner {
-  padding: 20px
+  padding: 5px 20px
 }
 
 .swagger-ui .responses-inner h4, .swagger-ui .responses-inner h5 {
@@ -599,7 +599,7 @@
 
 .swagger-ui .btn.authorize span {
   float: left;
-  padding: 4px 20px 0 0
+  padding: 4px 10px 0 0
 }
 
 .swagger-ui .btn.authorize svg {
@@ -918,7 +918,7 @@
 .swagger-ui .dialog-ux .modal-ux-content {
   overflow-y: auto;
   max-height: 540px;
-  padding: 20px
+  padding: 0
 }
 
 .swagger-ui .dialog-ux .modal-ux-content p {
@@ -1162,7 +1162,8 @@
 .swagger-ui table {
   width: 100%;
   padding: 0 10px;
-  border-collapse: collapse
+  border-collapse: collapse;
+  margin: 0 0 10px
 }
 
 .swagger-ui table.model tbody tr td {
@@ -1185,7 +1186,7 @@
 }
 
 .swagger-ui table tbody tr td {
-  padding: 10px 0 20px;
+  padding: 10px 0 15px;
   vertical-align: top
 }
 
@@ -1214,7 +1215,8 @@
 
 .swagger-ui .parameters-col_description input[type=text] {
   width: 100%;
-  max-width: 340px
+  max-width: 340px;
+  margin: 10px 0 0
 }
 
 .swagger-ui .parameter__name {
@@ -1246,7 +1248,7 @@
 }
 
 .swagger-ui .table-container {
-  padding: 20px
+  padding: 20px 20px 0
 }
 
 .swagger-ui .topbar {
@@ -1388,7 +1390,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 10px 0;
+  padding: 20px 0 10px;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center
