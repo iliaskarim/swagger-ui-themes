@@ -1685,3 +1685,20 @@
 .swagger-ui .response-col_links {
   font-size: 15px;
 }
+
+.swagger-ui .opblock h4 span {
+  position: relative; /* Needed for :after to anchor here */
+  display: inline-block;
+  color: inherit !important;
+}
+
+.swagger-ui .opblock h4 span:after {
+  background: #3b4151 !important;
+  bottom: -15px;
+  content: "";
+  height: 4px;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  width: 120%;
+}
