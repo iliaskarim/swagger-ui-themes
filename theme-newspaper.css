@@ -1702,3 +1702,13 @@
   transform: translateX(-50%);
   width: 120%;
 }
+
+/* Hide the Links column header */
+.swagger-ui .response-col_links {
+  display: none !important;
+}
+
+/* Hide all cells in the Links column */
+.swagger-ui td.response-col_links {
+  display: none !important;
+}
