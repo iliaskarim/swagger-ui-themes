@@ -573,7 +573,8 @@
   background: transparent;
   box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
   font-family: Titillium Web, sans-serif;
-  color: #3b4151
+  color: #3b4151;
+  border-radius: 9999px
 }
 
 .swagger-ui .btn[disabled] {
@@ -612,7 +613,8 @@
   animation: pulse 2s infinite;
   color: #fff;
   border-color: #222;
-  margin: 20px 0
+  margin: 10px 0 20px;
+  border-radius: 9999px; /* pill shape */
 }
 
 @-webkit-keyframes pulse {
@@ -1669,6 +1671,7 @@
    display: inline;
    color: #222222;
    border-color: #222222;
+   border-radius: 9999px; /* pill shape */
  }
  .swagger-ui .btn.authorize svg {
    fill: #222222;
