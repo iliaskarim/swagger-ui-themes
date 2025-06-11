@@ -933,7 +933,7 @@
 }
 
 .swagger-ui .dialog-ux .modal-ux-content h4 {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   margin: 15px 0 0;
   font-family: Titillium Web, sans-serif;
@@ -1729,4 +1729,15 @@
 .swagger-ui select.content-type .swagger-ui .try-out__btn {
   position: relative;
   top: 5px;
+}
+
+.swagger-ui .auth-btn-wrapper .btn {
+  color: #fff;
+  background-color: #222;
+}
+
+.swagger-ui .auth-btn-wrapper button.btn-done {
+  display: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
