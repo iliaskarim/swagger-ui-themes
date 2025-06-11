@@ -1716,3 +1716,17 @@
 .swagger-ui td.response-col_links {
   display: none !important;
 }
+
+.swagger-ui .authorization__btn svg {
+  color: #222;
+  opacity: 1 !important;
+}
+
+.swagger-ui div.copy-to-clipboard  {
+  background-color: #222 !important;
+}
+
+.swagger-ui select.content-type .swagger-ui .try-out__btn {
+  position: relative;
+  top: 5px;
+}
