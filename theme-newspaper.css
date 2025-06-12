@@ -189,7 +189,8 @@
 }
 
 .swagger-ui .opblock .opblock-summary-description {
-  font-size: 13px;
+  font-size: 16px;
+  font-weight: bold;
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -363,7 +364,8 @@
 }
 
 .swagger-ui .opblock-description-wrapper p, .swagger-ui .opblock-title_normal p {
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: bold;
   margin: 0;
   font-family: Open Sans, sans-serif;
   color: #3b4151
@@ -740,7 +742,7 @@
 }
 
 .swagger-ui label {
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 700;
   margin: 0 0 5px;
   font-family: Titillium Web, sans-serif;
@@ -1210,7 +1212,8 @@
 }
 
 .swagger-ui .parameters-col_description p {
-  font-size: 14px;
+  font-size: 15px;
+  font-weight: bold;
   margin: 0;
   font-family: Open Sans, sans-serif;
   color: #3b4151
@@ -1223,7 +1226,7 @@
 }
 
 .swagger-ui .parameter__name {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 400;
   font-family: Titillium Web, sans-serif;
   color: #3b4151
