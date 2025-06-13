@@ -1,0 +1,70 @@
+<!-- HTML for static distribution bundle build -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Swagger UI</title>
+    <link rel="stylesheet" type="text/css" href="./swagger-ui.css" />
+    <link rel="stylesheet" type="text/css" href="./theme-newspaper.css" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="icon" type="image/png" href="./favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="./favicon-16x16.png" sizes="16x16" />
+  </head>
+
+  <body>
+    <div id="swagger-ui"></div>
+    <script src="./swagger-ui-bundle.js" charset="UTF-8"> </script>
+    <script src="./swagger-ui-standalone-preset.js" charset="UTF-8"> </script>
+    <script src="./swagger-initializer.js" charset="UTF-8"> </script>
+
+    <script>
+      const injectH4Spans = () => {
+        document.querySelectorAll('.swagger-ui .opblock h4').forEach(h4 => {
+          if (!h4.querySelector('span')) {
+            const span = document.createElement('span');
+            span.textContent = h4.textContent.trim();
+            h4.textContent = '';
+            h4.appendChild(span);
+          }
+        });
+      };
+
+      const cleanMicrolight = () => {
+        document.querySelectorAll('pre.microlight').forEach(pre => {
+          // Style the code block
+          pre.style.background = '#f7f7f7';
+          pre.style.color = '#3b4151';
+        });
+
+        // Remove inline styles from <span> elements (highlighting)
+        document.querySelectorAll('pre.microlight span').forEach(span => {
+          span.removeAttribute('style');
+        });
+      };
+
+      // MutationObserver to trigger on DOM updates
+      const observer = new MutationObserver((mutations) => {
+        let needsUpdate = false;
+        mutations.forEach(m => {
+          if ([...m.addedNodes].some(n => n.nodeType === 1)) {
+            needsUpdate = true;
+          }
+        });
+
+        if (needsUpdate) {
+          injectH4Spans();
+          cleanMicrolight();
+        }
+      });
+
+      window.addEventListener('load', () => {
+        injectH4Spans();
+        cleanMicrolight();
+        observer.observe(document.body, {
+          childList: true,
+          subtree: true
+        });
+      });
+    </script>
+  </body>
+</html>
