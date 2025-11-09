@@ -1,0 +1,36 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build docker image",
+      "type": "shell",
+      "command": "docker build -t iliaskarim/swagger-ui:latest . 2> /dev/null && echo OK || echo FAIL",
+      "problemMatcher": [],
+      "presentation": {
+        "echo": false,
+        "showReuseMessage": false,
+        "clear": true
+      }
+    },
+    {
+      "label": "Serve Swagger UI",
+      "type": "shell",
+      "command": "docker compose down; docker compose up -d",
+      "problemMatcher": [],
+      "presentation": {
+         "clear": true,
+         "panel": "dedicated"
+      }
+    },
+    {
+      "label": "Stop Swagger UI",
+      "type": "shell",
+      "command": "docker compose down",
+      "problemMatcher": [],
+      "presentation": {
+         "clear": true,
+         "panel": "dedicated"
+      }
+    }
+  ]
+}
