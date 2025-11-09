@@ -1,0 +1,6 @@
+version: '3'
+services:
+  swagger:
+    image: iliaskarim/swagger-ui
+    ports:
+      - "8080:8080"
